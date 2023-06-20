@@ -1,32 +1,3 @@
-
-// function myfun(){
-//     Amount=+document.getElementById("txt1").value;
-//     noy=+document.getElementById("txt2").value;
-//     roi=+document.getElementById("txt3").value;
-//     Opening_balance=0;
-//     result=``
-//     for(i=1;i<=noy;i++)
-//     { 
-//         Intrest=Math.round((Opening_balance+Amount)*roi/100);
-//         Closing_balance=Math.round(Opening_balance+Amount+Intrest);
-//         console.log(i,Opening_balance,Amount,Intrest,Closing_balance)
-        
-//         result=result+`
-//         <tr>
-//         <td> ${i}</td> 
-//         <td> ${ Opening_balance}</td> 
-//         <td> ${Amount}</td> 
-//         <td> ${Intrest}</td> 
-//         <td> ${ Closing_balance}</td> 
-//         </tr>`
-//         Opening_balance=Closing_balance;
-//     }
-//     document.querySelector("#finalAns").innerHTML=result;
-
-
-// } 
-
-
 function myfun() {
     var amount = +document.getElementById("txt1").value;
     var numberOfYears = +document.getElementById("txt2").value;
