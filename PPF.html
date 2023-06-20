@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ppf Calculator</h1>
+        <ul>
+            <li>Deposited Amount</li>
+            <li><input type="text" id="txt1" class="form-control"></li>
+            <li>No Of year</li>
+            <li><input type="number" id="txt2" class="form-control" min="0" max="15"></li>
+            <li>Rate</li>
+            <li><input type="text" id="txt3" class="form-control"></li>
+            <li><button class="btn-outline-dark" onclick="myfun()"> Calculate</button></li>
+        </ul>
+
+        <table class="table">
+            <thead>
+                <tr style="margin: 20px 20px;" class="text-center">
+                    <th>Year</th>
+                    <th>Opening_Balance</th>
+                    <th>Amount</th>
+                    <th>Intrest</th>
+                    <th>Closing_Balance</th>
+                </tr>
+            </thead>
+            <tbody id="finalAns"></tbody>
+        </table>
+
+    </div>
+    <style>
+        ul {
+            list-style: none;
+            margin: 30px 0px;
+        }
+
+        button {
+            background-color: #0b9e92;
+        }
+
+         /*.container {
+            width: 1200px;
+            margin: auto;
+        } */
+
+        table thead tr th {
+            margin: 5px 20px;
+        }
+        #finalAns{
+            margin-left:200px;
+        }
+    </style>
+    <script src="script1.js"></script>
+</body>
+
+</html>
